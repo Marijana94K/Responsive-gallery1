@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vjezba</title>
+
+<style>
+
+    img {
+        max-width: 100%;
+    }
+
+#grid1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.box {
+    background-color: cornflowerblue;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.box p {
+    position:relative;
+    color: cornsilk;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100px;
+    transition: 0.5s;
+    opacity: 0;
+    font-size: 1.4em;
+}
+.box:hover p{
+    transform: rotate(0);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+h1{
+    position: relative;
+    font-size: 4em;
+    text-align: center;
+    margin: 20px auto;
+    cursor: pointer;
+    color: cyan;
+    z-index: 1;
+
+}
+
+h1:hover{
+    animation: roller 1s 1 ease-out;
+    }
+
+    body{
+        background-color: darkcyan;
+        font-family: sans-serif italic;
+        overflow-x: hidden;
+        background:linear-gradient(rgb(0, 89, 255), rgb(255, 255, 255) cyan );
+    }
+
+    @keyframes roller{
+    0%{transform: rotateX(0deg);}
+    10%{transform: rotateX(10deg);}
+    20%{transform: rotateX(20deg);}
+    30%{transform: rotateX(30deg);}
+    40%{transform: rotateX(40deg);}
+    80%{transform: rotateX(320deg);}
+    85%{transform: rotateX(330deg);}
+    90%{transform: rotateX(340deg);}
+    95%{opacity: 0.5;}
+    100%{transform: rotateX(360deg); opacity: 1;}
+    }
+</style>
+
+
+
+</head>
+<body>
+    <h1>Gallery assigment- Hover edition</h1>
+    <hr>
+    
+    <div id="grid1">
+        <div id="box1" class="box"><img src="placeholder-image.png"><p>Image title</p></div>
+        <div id="box2" class="box"><img src="placeholder-image.png"><p>Image title</p></div>
+        <div id="box3" class="box"><img src="placeholder-image.png"><p>Image title</p></div>
+        <div id="box4" class="box"><img src="placeholder-image.png"><p>Image title</p></div>
+        <div id="box5" class="box"><img src="placeholder-image.png"><p>Image title</p></div>
+        <div id="box6" class="box"><img src="placeholder-image.png"><p>Image title</p></div>
+        <div id="box7" class="box"><img src="placeholder-image.png"><p>Image title</p></div>
+        <div id="box8" class="box"><img src="placeholder-image.png"><p>Image title</p></div>
+        <div id="box9" class="box"><img src="placeholder-image.png"><p>Image title</p></div>
+        <div id="box10" class="box"><img src="placeholder-image.png"><p>Image title</p></div>
+    </div>
+
+</body>
+</html>
